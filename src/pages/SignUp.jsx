@@ -1,8 +1,23 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { FinancialTips } from "../components/FinancialTips";
+import { SignUpForm } from "../components/SignUpForm";
+import { DefaultLayout } from "../components/layout/DefaultLayout";
+
 const SignUp = () => {
   return (
-    <>
-      <h1>SignUP Here</h1>
-    </>
-  )
-}
-export default SignUp
+    <Container className="p-5">
+      <Row className="bg-dark  p-5 rounded">
+        <Col md={6}>
+          <FinancialTips />{" "}
+        </Col>
+        <Col md={6}>
+          <SignUpForm />{" "}
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default SignUp;

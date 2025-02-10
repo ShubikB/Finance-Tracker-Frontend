@@ -3,7 +3,7 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Outlet } from "react-router-dom";
 
-export const DefaultLayout = ({ children }) => {
+export const DefaultLayout2 = ({ children }) => {
   return (
     <div>
       {/* nav bar */}
